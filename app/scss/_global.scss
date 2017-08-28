@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600,700');
+@import url(../fonts/font-awesome-4.7.0%25203/scss/);
+$darkturquise: #035159;
+$turquise: #48acac;
+$grey: #a5a4a3;
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+* { 
+    box-sizing: border-box; 
+    margin: 0;
+}
+
+body {
+    background-color: #f1efed;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+#main-wrapper {
+    margin: 0 auto;
+    width: 66%;
+    padding-bottom: 2rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+        width: 100%;
+    }
+    
+}
+
+section {
+        @media screen and (max-width: $breakpoint-tablet) {
+            width: 90%;
+            margin: 2rem auto auto auto;
+    }
+}
+
+.section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: $breakpoint-tablet) and (min-width: $breakpoint-mobile) {
+        justify-content: space-between;
+    }
+    @media screen and (max-width: $breakpoint-tablet) {
+        flex-direction: column;
+    }
+}
+
+h1 {
+    font-size: 2.75rem;
+    line-height: 150%;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $darkturquise;
+}
+
+h2 {
+    font-size: 1.9rem;
+    line-height: 150%;
+    font-weight: 300;
+    color: $darkturquise;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $darkturquise;
+    i {
+        font-size: 1em;
+        color: $grey;
+        margin-right: 0.3em;
+    }
+    @media screen and (max-width: $breakpoint-tablet) {
+        text-align: center;
+        margin: 0;
+        white-space: nowrap;
+    }
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 0.875rem;
+    color: #bababa;
+    font-weight: 300;
+}

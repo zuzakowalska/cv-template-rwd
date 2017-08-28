@@ -1,0 +1,72 @@
+section#header {
+    display: flex;
+    justify-content: center;
+    padding-left: 0.8rem;
+    @media screen and (max-width: $breakpoint-mobile) {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0 auto;
+        .header-container {
+            margin: 0 auto;
+        }
+    }
+    div.header-container {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 1rem;
+        .profile-circle {
+            width: 9.5rem;
+            height: 9.5rem;
+            border-radius: 50%;
+            background-image: url(../img/4d7.png);
+            background-position: center;
+            background-size: cover;
+            margin: 0 2rem;
+        }
+    }
+    div.contact {
+        margin-top: 2rem;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-direction: row;
+        color: $grey;
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+            text-align: right;
+            li {
+                margin: 0 1rem 0.5rem 0;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-end;
+                i {
+                    padding: 0.25rem 0 0 0.5rem;
+                }
+            }
+            address {
+                font-style: normal;
+                white-space: nowrap;
+            }
+        }
+        ul.contact-icon {
+            text-align: left;
+            padding: 0px;
+            margin-bottom: 1.4rem;
+        }
+    }
+
+}
+
+    .line {
+        display: block;
+        height: 18px;
+        border-bottom: 2px solid rgba(1, 52, 64, 0.1);
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
